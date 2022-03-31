@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="./images/icon.jpg" />
   <title>Путешествия по России</title>
 </head>
 <body>
@@ -16,25 +17,31 @@
       <nav>
         <ul class="header__list">
           <li>
-            <a href="#" class="header__lang-link header__lang-link_ru" id="header__lang-link_ru" onclick="text_rus()">Ru</a>
+            <a href="#" class="header__lang-link header__lang-link_ru" 
+            id="header__lang-link_ru" onclick="text_rus()">Ru</a>
           </li>
           <li>
-            <a href="#" class="header__lang-link header__lang-link_en" id="header__lang-link_en" onclick="text_en()">En</a>
+            <a href="#" class="header__lang-link header__lang-link_en" 
+            id="header__lang-link_en" onclick="text_en()">En</a>
           </li>
         </ul>
       </nav>
     </header>
       <div class="lead">
-        <h1 class="lead__title">Путешествия по России</h1>
-        <h3 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь. </h3>
-        <div class="lead__image">
-          <img src="/images/Group 4.svg" alt="маршрут движения">
-        </div>
-        <p class="lead__caption">ваша полка — верхняя</p>
+        <h1 class="lead__title text_ru">Путешествия по&nbsp;России</h1>
+        <h1 class="lead__title text_en">Traveling in&nbsp;Russia</h1>
+        <h3 class="lead__subtitle text_ru">Настоящая&nbsp;страна&nbsp;не&nbsp;в&nbsp;выпусках <br>
+          новостей,&nbsp;а&nbsp;здесь. </h3>
+        <h3 class="lead__subtitle text_en">The&nbsp;real&nbsp;country&nbsp;is&nbsp;not&nbsp;in 
+          the&nbsp;news,&nbsp;but&nbsp;here. </h3>
+        <img class="lead__image" src="./images/lead-polka.jpg" alt="kalegin-michail">
+        <p class="lead__caption text_ru">ваша полка — верхняя</p>
+        <p class="lead__caption text_en">your berth — is on top</p>
       </div>
-      <div class="intro">
-        <h2 class="intro__title">Чего мы там не видели?</h2>
-        <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, 
+      <section class="intro">
+        <h2 class="intro__title text_ru">Чего мы там не видели?</h2>
+        <h2 class="intro__title text_en">What didn't we see there?</h2>
+        <p class="intro__text text_ru">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, 
           но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? 
           На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами 
           Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно 
@@ -42,7 +49,16 @@
           Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, 
           усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. 
           Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
-        <ul class="intro__text">
+          <p class="intro__text text_en">According to ВЦИОМ polls, 95% of Russians dream of going somewhere,
+            but only 36% plan to spend their holidays in their home country. 
+            Like, what have we not seen here at home?
+            In fact, Russia is a whole universe with the gentle sea of ​​the south, dense forests
+            Sayans and severe ice of the Putorana plateau. And you can see all these beauties
+            without millions in the account, a passport and many hours of flights.
+            Like, for example, Vera Bashmakova, a brave young mother who took three children in her arms,
+            I put them in my Lada and drove 20 thousand kilometers in my native country.
+            We have selected and described some interesting places worthy of your vacation.</p>
+        <ul class="intro__list text_ru">
           <li>
             Часовых поясов <span>11</span>
           </li>
@@ -59,8 +75,25 @@
             Аэропортов <span>241</span>
           </li>
         </ul>
-      </div>
-      <div class="photo-grid">
+        <ul class="intro__list text_en">
+          <li>
+            Time zones <span>11</span>
+          </li>
+          <li>
+            UNESCO natural heritage objects <span>12</span>
+          </li>
+          <li>
+            UNESCO cultural heritage objects <span>16</span>
+          </li>
+          <li>
+            Nature reserves <span>105</span>
+          </li>
+          <li>
+            Airports <span>241</span>
+          </li>
+        </ul>
+      </section>
+      <section class="photo-grid">
         <img src="./images/photo-grid-train.jpg" alt="train">
         <img src="./images/photo-grid-atharva-tulsi.jpg" alt="atharva-tulsi">
         <img src="./images/photo-grid-tuman.jpg" alt="tuman">
@@ -73,8 +106,8 @@
         <img src="./images/photo-grid-kamchatka-2.jpg" alt="kamchatka-2">
         <img src="./images/photo-grid-baikal-2.jpg" alt="baikal-2">
         <img src="./images/photo-grid-ergaki.jpg" alt="ergaki">
-      </div>
-      <div class="places">
+      </section>
+      <section class="places">
         <div class="place">
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
@@ -82,15 +115,24 @@
             <a href="http://park-kosa.ru/" class="place__link">park-kosa.ru</a>
           </div>
           <img src="./images/place-kosa.jpg" alt="kosa" class="place__image">
-          <p class="place__paragraph">Здесь, посреди лесов и песчаных дюн, 
+          <p class="place__paragraph text_ru">Здесь, посреди лесов и песчаных дюн, 
             вы сможете увидеть два водных горизонта — спокойного Куршского залива 
             с одной стороны и подёрнутого рябью волн Балтийского моря с другой. 
             Уникальная природная зона на краю российского анклава.</p>
-          <p class="place__paragraph">На этом Калининградская область не заканчивается. <span><br></span>
+          <p class="place__paragraph text_ru">На этом Калининградская область не заканчивается.
             Для путешественника и исследователя там же по соседству — 
             самая западная точка России, Балтийская коса, — и немецкое наследие россыпи 
             небольших приморских городов. Атмосфера здешних мест исключает суету, окуная 
             в спокойствие природы и запах стального, прохладного моря.</p>
+          <p class="place__paragraph text_en">Here, in the middle of forests and sand dunes, 
+            you can see two water horizons - the calm Curonian Lagoon on one side and the 
+            rippling waves of the Baltic Sea on the other. A unique natural area on 
+            the edge of the Russian enclave.</p>
+          <p class="place__paragraph text_en">The Kaliningrad region doesn't end there. 
+            For the traveler and researcher, there is the westernmost point of Russia, 
+            the Baltic Spit, and the German heritage of a scattering of small seaside 
+            towns in the same neighborhood. The atmosphere of these places eliminates 
+            the fuss, dipping into the tranquility of nature and the smell of steel, cool sea.</p>
         </div>
         <div class="place">
           <h2 class="place__title">Кольский</h2>
@@ -100,14 +142,22 @@
             class="place__link">National Geographic</a>
           </div>
           <img src="./images/place-kolsky.jpg" alt="kolsky" class="place__image">
-          <p class="place__paragraph">Почти весь полуостров находится за Полярным кругом. 
+          <p class="place__paragraph text_ru">Почти весь полуостров находится за Полярным кругом. 
             Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан, 
             прикидывающийся Баренцевым морем.</p>
-          <p class="place__paragraph">Возможно, вы смотрели Звягинцева и даже слышали историю 
+          <p class="place__paragraph text_ru">Возможно, вы смотрели Звягинцева и даже слышали историю 
             арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось под снегом 
             школьных воспоминаний об уроках географии. Возможно, вы не интересовались 
             пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает апатия. 
             Но ваша мечта увидеть северное сияние начинает сбываться с билетом в Мурманск.</p>
+          <p class="place__paragraph text_en">Almost the entire peninsula lies above the Arctic Circle. 
+            The Saami tundra, from which to the south is the taiga, and to the north is the Arctic Ocean,
+            pretending to be the Barents Sea.</p>
+          <p class="place__paragraph text_en">Perhaps you have watched Zvyagintsev and even heard the story 
+            of the Arctic festival in Teriberka. Perhaps the word "Khibiny" did not remain under 
+            the snow of school memories of geography lessons. Perhaps you were not interested 
+            in the ultra-deep well penetrating the earth's crust, and apathy has long covered you from apatites. 
+            But your dream of seeing the northern lights comes true with a ticket to Murmansk.</p>
         </div>
         <div class="place">
           <h2 class="place__title">Алтай</h2>
@@ -117,14 +167,22 @@
             class="place__link">Facebook</a>
           </div>
           <img src="./images/place-altai.jpg" alt="altai" class="place__image">
-          <p class="place__paragraph">Алтай — одно из красивейших мест в России. 
+          <p class="place__paragraph text_ru">Алтай — одно из красивейших мест в России. 
             В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, 
             горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с 
             невидимым чудом здешних мест — горным воздухом.</p>
-          <p class="place__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. 
+          <p class="place__paragraph text_ru">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. 
             Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, 
             над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели 
             Алтайского края.</p>
+          <p class="place__paragraph text_en">Altai is one of the most beautiful places in Russia. 
+            First of all, because of the mountains: if you drive along the ridge, you will see slopes 
+            strewn with pine trees, mountain rivers and lakes. And if you open the windows in the car, 
+            you can get acquainted with the invisible miracle of these places - mountain air.</p>
+          <p class="place__paragraph text_en">The climate in Altai is temperate, so it's best to 
+            go here in summer. So you will see all the variety of local flora and fauna. 
+            Moose roam the forests of Altai, eagles fly over the ridges, and roe deer graze on the plains. 
+            And the famous manuls are also inhabitants of the Altai Territory.</p>
         </div>
         <div class="place">
           <h2 class="place__title">Зимний Байкал</h2>
@@ -133,14 +191,21 @@
             <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
           </div>
           <img src="./images/place-winter-baikal.jpg" alt="winter-baikal" class="place__image">
-          <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро в мире. 
+          <p class="place__paragraph text_ru">Всем известен Байкал как крупнейшее озеро в мире. 
             Многие также знают, что это самый большой источник пресной воды и 
             одно из красивейших мест в России.</p>
-          <p class="place__paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для 
+          <p class="place__paragraph text_ru">Конечно, это всё так. Но Байкал ещё идеальное место для 
             соревнований по скийорингу. Это такой вид спорта, когда лыжник привязывает себя 
             к мотоциклу, и тандем старается развить как можно бóльшую скорость на льду. 
             В марте 2019 года на фестивале «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.</p>
-        </div>
+          <p class="place__paragraph text_en">Everyone knows Baikal as the largest lake in the world. 
+            Many also know that this is the largest source of fresh water and one 
+            of the most beautiful places in Russia.</p>
+          <p class="place__paragraph text_en">Of course it is. But Baikal is still an ideal place for 
+            skiing competitions. This is a sport where a skier ties himself to a motorcycle and 
+            the tandem tries to develop as much speed as possible on the ice. In March 2019, a world record of 
+            197.011 km/h was set at the Baikal Mile festival.</p>
+          </div>
         <div class="place">
           <h2 class="place__title">Карелия</h2>
           <div class="place__website">
@@ -148,23 +213,39 @@
             <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
           </div>
           <img src="./images/place-karelia.jpg" alt="karelia" class="place__image">
-          <p class="place__paragraph">Сибирь заканчивается не на Урале, а в Карелии: 
+          <p class="place__paragraph text_ru">Сибирь заканчивается не на Урале, а в Карелии: 
             образующая тайгу сибирская лиственница не растёт западнее Водлозера. 
             Зато здесь она вымахивает на 30 метров — леса карельских национальных парков из-за непроходимых 
             болот никогда не знали топора. Некоторым соснам уже больше чем полтысячелетия. 
             Прикоснитесь к живому существу, видевшему солнце раньше, чем увидал его Иван Грозный. 
             В девственном лесу на сотню километров не встретишь тропы. А на редких тропинках деревья в паре 
             метров от земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.</p>
+          <p class="place__paragraph text_en">Siberia ends not in the Urals, but in Karelia: 
+            the Siberian larch that forms the taiga does not grow west of the Vodlozero. 
+            But here it swings up to 30 meters - the forests of the Karelian national parks, 
+            due to impenetrable swamps, have never known an ax. Some pines are more than half 
+            a millennium old. Touch a living creature that saw the sun before Ivan the Terrible 
+            saw it. In the virgin forest for a hundred kilometers you will not find a path. 
+            And on rare paths, trees a couple of meters from the ground are marked with bear claws. 
+            Let everyone know who's boss.</p>
         </div>
-      </div>
-      <div class="cover">
-        <div class="cover__background"></div>
-        <div class="cover__overlay"></div>
-        <h2 class="cover__title">До Байкала «на собаках»</h2>
-        <p class="cover__subtitle">По мотивам учебной темы <span><br></span> о Транссибе — 
-          путешествие <span><br></span> от столицы до Байкала на электричках.</p>
-      </div>
-      <div class="footer">
+      </section>
+
+      <section class="cover">
+        <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" 
+        class="cover__background">
+          <div class="cover__overlay">
+            <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
+            <p class="cover__subtitle">
+По мотивам учебной темы 
+о&nbsp;Транссибе — путешествие 
+от&nbsp;столицы до Байкала на электричках.</p>
+          </div>
+        </a>
+      </section>
+      
+
+      <footer class="footer">
         <nav>
           <ul>
             <li>
@@ -185,8 +266,7 @@
           </ul>
         </nav>
         <a href="#" class="footer__copiryght">© 2022. DimDim</a>
-      </div>
-    </div>
+      </footer>
   </div>
-
+  <script src="index.js"></script>
 </body></html>
