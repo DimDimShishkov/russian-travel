@@ -39,8 +39,6 @@ html, body {
 }
 
 
-
-
 .header__logo img {
   transition: all 0.3s ease;
   margin: 0;
@@ -117,7 +115,11 @@ html, body {
   margin: 32px 0;
 }
 
-
+@media screen and (min-width: 730px) {
+  .lead {
+    margin: 20px 0;
+  }
+}
 
 .lead__title {
   font-size: 40px;
@@ -141,7 +143,7 @@ html, body {
   .lead__title {
     font-size: 96px;
     line-height: 100px;
-    margin: 32px 24px;
+    margin: 20px 24px 32px;
     width: auto;
   }
 }
@@ -167,7 +169,7 @@ html, body {
   .lead__subtitle {
     font-size: 30px;
     line-height: 36px;
-    margin: 32px 64px;
+    margin: 32px 64px 0;
     width: auto;
   }
 }
@@ -179,6 +181,13 @@ html, body {
   margin: 40px 0 0;
   height: calc(100vw/1.6);
   min-height: 200px;
+  padding: 0;
+}
+
+@media screen and (min-width: 730px) {
+  .lead__image {
+    margin: 56px 0 0;
+  }
 }
 
 .lead__caption {
@@ -191,6 +200,12 @@ html, body {
   text-transform: uppercase;
   margin: 8px 16px;
 }
+
+@media screen and (min-width: 730px) {
+  .lead__caption {
+    margin: 8px 24px;
+  }
+}  
 
 .intro {
   margin: 64px 16px 0;
@@ -275,46 +290,71 @@ html, body {
 
 .places {
   width: 100%;
-  margin: 64px 0 66px;
+  margin: 64px 0 0;
   padding: 0;
 }
 
 @media screen and (min-width: 730px) {
   .places {
-    margin: 88px 24px 0;
+    margin: 88px 0;
   }
 }
 
 .place {
-  display: grid;
   width: 100%;
   margin: 50px 0;
 }
 
 @media screen and (min-width: 730px) {
   .place {
-    grid-template: 1fr 1fr / 1fr 1fr;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: minmax(46px, max-content) 1fr / 340px 1fr;
+    padding: 0 24px;
+    margin: 73px 0;
+    row-gap: 48px;
+    column-gap: 28px;
+    grid-template-areas: 
+    "place__title place__website"
+    "place__image place__paragraph";
   }
 }
 
 .place__title {
   font-size: 32px;
-  font-style: normal;
   font-weight: 900;
   line-height: 35px;
   letter-spacing: 0em;
   text-align: left;
   margin: 0 0 0 16px;
+  grid-area: place__title;
+}
+
+@media screen and (min-width: 730px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0;
+  }
 }
 
 .place__website {
   margin: 32px 16px 0;
+  grid-area: place__website;
+}
+
+@media screen and (min-width: 730px) {
+  .place__website {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .place__url-heading {
-  font-family: Inter;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 12px;
   letter-spacing: 2px;
@@ -322,13 +362,14 @@ html, body {
   color: #AAAAAA;
   margin: 0 0 12px;
   padding: 0;
+  text-transform: uppercase ;
 }
+
 
 .place__link {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
   margin: 0;
@@ -338,28 +379,54 @@ html, body {
 
 .place__image {
   width: 100%;
-  margin: 32px 0;
+  margin: 32px 0 0;
+  grid-area: place__image;
+}
+
+@media screen and (min-width: 730px) {
+  .place__image {
+    margin: 0;
+  }
 }
 
 .place__paragraph {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 163%;
   letter-spacing: 0em;
   text-align: left;
-  margin: 0 16px 25px;
+  margin: 32px 16px 0;
+  grid-area: place__paragraph;
 }
 
-.place__paragraph:last-child {
-  margin: 0 16px;
+.place__paragraph p {
+  margin: 25px 0 0;
 }
 
+@media screen and (min-width: 730px) {
+  .place__paragraph {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .place__paragraph p{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
 
+  .place__paragraph p:nth-child(2){
+    margin: 25px 0 0;
+    width: 100%;
+    padding: 0;
+  }
+}
 
 .cover {
   width: 100%;
-  margin: 66px 0 64px;
+  margin: 66px 0 0;
 }
 
 .cover__overlay {
@@ -399,17 +466,11 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   object-fit: cover;
-  margin: 66px 0 64px;
   text-decoration: none;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.cover__title {
-  margin: 0;
-  padding: 0;
 }
 
 .cover__title {
@@ -421,19 +482,28 @@ html, body {
   line-height: 35px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 0 auto 16px;
+  margin: 0 16px 16px;
   padding: 0;
-  width: 75%;
 }
 
 .cover__title p:first-child {
   margin: 0 auto;
 }
 
-.cover__subtitle {
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 440px) {
+  .cover__title {
+    margin: 0 auto 32px;
+    width: 55%;
+  }
 }
+
+@media screen and (min-width: 730px) {
+  .cover__title {
+    width: 70%;
+    font-size: 72px;
+    line-height: 76px;
+    }
+  }
 
 .cover__subtitle {
   position: relative;
@@ -449,13 +519,37 @@ html, body {
   white-space: pre-wrap;
 }
 
+@media screen and (min-width: 730px) {
+  .cover__subtitle {
+    width: 50%;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: normal;
+    }
+  }
+
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 0 16px 24px;
+  padding: 64px 16px 24px;
+  box-sizing: border-box;
 }
 
+@media screen and (min-width: 730px) {
+  .footer {
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 88px 24px 24px;
+    }
+  }
+
 .footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer nav {
   margin: 0;
   padding: 0;
 }
@@ -464,6 +558,13 @@ html, body {
   list-style: none;
   margin: 32px 0 0;
   padding: 0;
+}
+
+@media screen and (min-width: 730px) {
+  .footer li {
+    display:inline-block;
+    margin: 0 0 0 18px;
+  }
 }
 
 .footer li:first-child {
@@ -487,13 +588,21 @@ html, body {
   opacity: .8;
 }
 
+
+@media screen and (min-width: 730px) {
+  .footer__link {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer__copiryght {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
-  letter-spacing: 0em;
-  text-align: left;
   text-decoration: none;
   color: #FFFFFF;
   margin: 48px 0 0;
@@ -503,3 +612,10 @@ html, body {
 .footer__copiryght:hover {
   opacity: .8;
 }
+
+@media screen and (min-width: 730px) {
+  .footer__copiryght {
+    line-height: 16px;
+    margin: 0;
+    }
+  }
