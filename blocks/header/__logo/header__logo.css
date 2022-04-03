@@ -1,0 +1,23 @@
+.header__logo {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header__logo img {
+    transition: all .3s ease;
+    margin: 0;
+    padding: 0;
+    width: 142px;
+    height: 42px;
+  }
+  
+  .header__logo:hover {
+    opacity: .6;
+  }
+
+  @media screen and (min-width: 470px) {
+    .header__logo img {
+      width: 176px;
+      height: 52px;
+    }
+  }

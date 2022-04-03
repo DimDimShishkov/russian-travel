@@ -1,0 +1,20 @@
+.lead__image {
+    object-fit: contain;
+    margin: 40px 0 0;
+    min-height: 200px;
+    padding: 0;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 730px) {
+    .lead__image {
+      margin: 56px auto 0;
+      max-width: 984px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .lead__image {
+      margin: 64px auto 0;
+    }
+  }

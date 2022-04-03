@@ -1,0 +1,11 @@
+.page {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #2A2C2F;
+    min-width: 320px;
+    font-family: 'Inter', sans-serif, Arial;
+    color: #fff; 
+    text-rendering: optimizeLegibility;
+    
+  }
