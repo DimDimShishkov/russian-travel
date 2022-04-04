@@ -5,21 +5,17 @@
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 16px 16px 0;
+  margin: 16px auto 0;
   padding: 0;
-}
-  
-@media screen and (min-width: 440px) {
-  .lead__subtitle {
-    margin: 16px 64px 0;
-  }
+  max-width: 288px;
 }
   
   @media screen and (min-width: 730px) {
     .lead__subtitle {
       font-size: 30px;
       line-height: 36px;
-      margin: 32px 64px 0;
+      margin: 32px auto 0;
       width: auto;
+      max-width: 640px;
     }
   }

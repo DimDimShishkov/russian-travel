@@ -7,12 +7,13 @@
   @media screen and (min-width: 730px) {
     .lead__info {
       margin: 56px auto 0;
-      max-width: 984px;
+      max-width: 928px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     .lead__info {
       margin: 64px auto 0;
+      max-width: 984px;
     }
   }

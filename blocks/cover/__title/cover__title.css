@@ -9,29 +9,19 @@
     text-align: center;
     margin: 0 16px 16px;
     padding: 0;
-  }
-  
-  .cover__title p:first-child {
-    margin: 0 auto;
+    max-width: 288px;
   }
   
   @media screen and (min-width: 440px) {
     .cover__title {
       margin: 0 auto 32px;
-      width: 55%;
     }
   }
   
   @media screen and (min-width: 730px) {
     .cover__title {
-      width: 70%;
+      max-width: 560px;
       font-size: 72px;
       line-height: 76px;
       }
     }
-  
-  @media screen and (min-width: 928px) {
-    .cover__title {
-      width: 60%;
-    }
-  }

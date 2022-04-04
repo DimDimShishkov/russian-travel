@@ -10,19 +10,14 @@
     margin: 0 auto;
     padding: 0;
     white-space: pre-wrap;
+    max-width: 288px;
   }
   
   @media screen and (min-width: 730px) {
     .cover__subtitle {
-      width: 50%;
+      max-width: 360px;
       font-size: 18px;
       line-height: 22px;
       white-space: normal;
-    }
-  }
-  
-  @media screen and (min-width: 928px) {
-    .cover__subtitle {
-      width: 35%;
     }
   }
