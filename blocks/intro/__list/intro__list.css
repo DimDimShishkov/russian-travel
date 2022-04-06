@@ -8,13 +8,3 @@
     margin: 34px 0 0;
     padding: 0;
 }
-  
-.intro__list li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-  
-.intro__list span {
-  font-weight: 400;
-}

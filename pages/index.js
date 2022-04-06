@@ -1,6 +1,6 @@
 function text_en() {
-    document.getElementsByClassName('header__lang-link_ru')[0].style.textDecoration = 'none';
-    document.getElementsByClassName('header__lang-link_en')[0].style.textDecoration = 'underline';
+    document.getElementById('header__lang-link_en').classList.add('header__lang-link_active');
+    document.getElementById('header__lang-link_ru').classList.remove('header__lang-link_active');
 
     document.getElementsByClassName('lead__title_ru')[0].style.display = 'none';
     document.getElementsByClassName('lead__title_en')[0].style.display = 'block';
@@ -21,9 +21,9 @@ function text_en() {
 }
 
 function text_rus() {
-    document.getElementsByClassName('header__lang-link_ru')[0].style.textDecoration = 'underline';
-    document.getElementsByClassName('header__lang-link_en')[0].style.textDecoration = 'none';
-    
+    document.getElementById('header__lang-link_ru').classList.add('header__lang-link_active');
+    document.getElementById('header__lang-link_en').classList.remove('header__lang-link_active');
+
     document.getElementsByClassName('lead__title_en')[0].style.display = 'none';
     document.getElementsByClassName('lead__title_ru')[0].style.display = 'block';
     document.getElementsByClassName('lead__subtitle_en')[0].style.display = 'none';

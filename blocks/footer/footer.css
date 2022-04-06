@@ -7,7 +7,6 @@
   
   @media screen and (min-width: 730px) {
     .footer {
-      box-sizing: border-box;
       flex-direction: row;
       justify-content: space-between;
       padding: 88px 24px 24px;
@@ -18,31 +17,4 @@
     .footer {
       padding: 92px 48px 24px;
     }
-  }
-  
-  .footer ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer nav {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer li {
-    list-style: none;
-    margin: 32px 0 0;
-    padding: 0;
-  }
-  
-  @media screen and (min-width: 730px) {
-    .footer li {
-      display:inline-block;
-      margin: 0 0 0 18px;
-    }
-  }
-  
-  .footer li:first-child {
-    margin: 0;
   }

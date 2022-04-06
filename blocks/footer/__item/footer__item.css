@@ -1,0 +1,16 @@
+  .footer__item {
+    list-style: none;
+    margin: 32px 0 0;
+    padding: 0;
+  }
+  
+  @media screen and (min-width: 730px) {
+    .footer__item {
+      display:inline-block;
+      margin: 0 0 0 18px;
+    }
+  }
+  
+  .footer__item:first-child {
+    margin: 0;
+  }
