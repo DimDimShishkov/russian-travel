@@ -4,7 +4,7 @@
 
 * Интро
 * Figma
-* Ссылка на проект 
+* [Ссылка на проект](https://dimdimshishkov.github.io/russian-travel/) 
 
 # Описание:
 
