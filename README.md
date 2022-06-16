@@ -1,24 +1,33 @@
-# Проект: Путешествие по России
+# Проектная работа "Путешествие по России".
 
 ### Обзор
+
 * Интро
 * Figma
 * Ссылка на проект 
 
-**Интро**
+# Описание:
 
-Это проект о путешествии по России.
+Проект "Путешествие по России" это одностраничный сайт про российский внутренний туризм.
 В нём рассказывается про места, которые стоит посетить хотя бы этим летом
+Для работы использовался [макет](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0) с сайта Figma.
+Работа проверялась по [чеклисту](https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist-3.pdf)
 
+# Функционал:
 
-**Figma**
+В данной работе представлены:
+* Адаптивный дизайн
+* Трансформация элементов страницы посредством CSS
 
-Для макета-образца был взят проект с сайта figma: 
+# Используемые технологии:
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-mobile?node-id=28503%3A0)
+* Flexbox
+* Grid Layout
+* BEM Methodology
 
-**Ссылка на проект**
+# Инструкция по копированию:
 
-* [Ссылка на проект](https://dimdimshishkov.github.io/russian-travel/)
+``` 
+git clone https://github.com/DimDimShishkov/russian-travel.git
+``` 
 
-Удачи!
